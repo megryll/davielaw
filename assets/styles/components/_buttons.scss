@@ -1,0 +1,39 @@
+.btn-outline {
+	position: relative;
+	display: block;
+	font-family: $slablight;
+	border: 1px solid rgba(255,255,255, .8);
+	background-color: rgba(255,255,255, 0);
+   width: 273px;
+   height: 50px;
+	margin: 48px 0;
+	font-size: 1.2em;
+	overflow: hidden;
+	transition: color 150ms ease-in-out 150ms, border-color 300ms ease-out, box-shadow 300ms ease-in-out;
+	z-index: 1;
+
+   	 &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $brand-purple;
+      z-index: -1;
+      transform: scaleX(0);
+      transition: transform 300ms ease-out 200ms;
+   }
+   
+   &:hover {
+      color: $white;
+      border-color: lighten(#868686, 20%);
+      box-shadow: 0 0 16px rgba(255, 255, 255, 0.1);
+      
+      &:after {
+         transform: scaleX(1);
+         transform-origin: 50% 50%;
+         transition: transform 300ms ease-out;
+      }
+   }
+}  

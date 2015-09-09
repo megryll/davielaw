@@ -41,6 +41,9 @@
     }
   };
 
+
+  
+
   // The routing fires all common scripts, followed by the page specific scripts.
   // Add additional events for more control over timing e.g. a finalize event
   var UTIL = {
@@ -68,10 +71,108 @@
 
       // Fire common finalize JS
       UTIL.fire('common', 'finalize');
+
+
+(function() {
+    var v = document.getElementsByClassName("youtube-player");
+    for (var n = 0; n < v.length; n++) {
+        var p = document.createElement("div");
+        p.innerHTML = labnolThumb(v[n].dataset.id);
+        p.onclick = labnolIframe;
+        v[n].appendChild(p);
+    }
+})();
+ 
+function labnolThumb(id) {
+    return '<img class="youtube-thumb" src="//i.ytimg.com/vi/' + id + '/hqdefault.jpg"><div class="play-button"></div>';
+}
+ 
+function labnolIframe() {
+    var iframe = document.createElement("iframe");
+    iframe.setAttribute("src", "//www.youtube.com/embed/" + this.parentNode.dataset.id + "?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&controls=0&showinfo=0");
+    iframe.setAttribute("frameborder", "0");
+    iframe.setAttribute("id", "youtube-iframe");
+    this.parentNode.replaceChild(iframe, this);
+}
+
+ /* Makes feature blocks equal height upon window resize */
+
+equalheight = function(container){
+
+var currentTallest = 0,
+     currentRowStart = 0,
+     rowDivs = new Array(),
+     $el,
+     topPosition = 0;
+ $(container).each(function() {
+
+   $el = $(this);
+   $($el).height('auto')
+   topPostion = $el.position().top;
+
+   if (currentRowStart != topPostion) {
+     for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+       rowDivs[currentDiv].height(currentTallest);
+     }
+     rowDivs.length = 0; // empty the array
+     currentRowStart = topPostion;
+     currentTallest = $el.height();
+     rowDivs.push($el);
+   } else {
+     rowDivs.push($el);
+     currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
+  }
+   for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+     rowDivs[currentDiv].height(currentTallest);
+   }
+ });
+}
+
+$(window).load(function() {
+  equalheight('.contained-section');
+});
+
+
+$(window).resize(function(){
+  equalheight('.contained-section');
+});
+
+
+
+
+
+/////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
   };
 
   // Load Events
   $(document).ready(UTIL.loadEvents);
 
+
+
 })(jQuery); // Fully reference jQuery after this point.
+
+
+
+ 
+
+

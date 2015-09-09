@@ -1,0 +1,280 @@
+.contained-section {  
+	padding: 110px 12%;
+}
+.dark-background {
+	color: $white;
+	width: 100%;
+
+	a {color: $white}
+}
+.off-white {
+	background-color: #fcfcfc;
+	h1,h2,h3,h4,h5,h6 {
+		color: $brand-purple;
+	}
+}
+.white {
+	background-color: #fff;
+	h1,h2,h3,h4,h5,h6 {
+		color: $brand-purple;
+	}
+}
+.pink {
+	background-color: $brand-purple;
+	.short-underline {
+		background-color: rgb(255, 255, 255);
+	}
+}
+.short-underline {
+	height: 6px;
+	width: 90px;
+	background-color: $light-gray;
+	opacity: 0.341;
+	margin: 29px 0;
+}
+.short-underline.centered {margin: 17px auto;}
+.da-hero {
+	position: relative;
+	height: 85vh;
+	padding: 80px 12%;
+	padding-right: 0;
+	img {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		max-width: 720px;
+		z-index: -1;
+	}
+}
+
+@media (max-width: 1200px) {
+  .da-hero {
+  	padding-top:50px;
+  	img {
+  		position: relative; 
+  		display: block; 
+  		max-width:100%; 
+  		float:right;
+  		margin-top: 30px;
+
+  	}
+  }
+ }
+  @media only screen and (min-width: 980px) and (max-width: 1200px) {
+	    .da-hero { 
+			height: auto !important;
+			padding-bottom: 0 !important;
+		}
+    }
+
+
+ #common-injuries {
+ 	h2 {text-align: center;}
+ }
+ ul.checkmarked-list {
+ 	list-style:none;
+ 	margin-top: 31px;
+ 	border-top: 1px solid #D0D7DA;
+ 	padding-left: 0;
+
+ 	li {
+ 		border-bottom: 1px solid #D0D7DA;
+ 		line-height: 30px;
+ 		padding-bottom: 6px;
+ 		
+ 		&:before { 
+ 			content: url('../images/checkmark.png');
+ 			margin-right: 15px;
+ 		}
+ 	}
+ }
+ ul.arrow-list {
+	list-style:none;
+
+ 	li {
+ 		border-bottom: 2px solid rgba(255,255,255, 0.1);
+ 		&:before {
+ 			content: url('../images/arrow.png');
+ 			margin-right: 15px;
+ 		}
+ 	}
+ }
+ @media (min-width: 990px) {
+ 	ul.arrow-list {
+ 		
+ 	}
+
+ }
+ ul.checkmarked-list li, ul.arrow-list li {
+    font-family: $slablight;
+    margin: 17px 0;
+    font-size: 1.5em;
+    line-height: 45px;
+}
+#common-injuries {
+	.callout-text {
+		width: 551px;
+		margin: 20px auto;
+
+
+	}
+}
+
+@media (max-width: 720px) {
+	#common-injuries .callout-text {width:100%;}
+}
+
+#meet-our-team {
+
+	.team-container {
+		background-color: $white;
+		margin-top: 25px;
+		
+	}
+
+	&.contained-section {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	ul { 
+		list-style: none; 
+		padding: 0 48px;
+
+		li {
+			border-bottom: 1px solid $light-gray;
+			margin: 15px;
+
+			a {
+				text-decoration: none;
+				color: $black;
+			}
+		}
+	}
+
+	p.icon {
+		vertical-align: middle;
+	}
+
+	.email {
+		&:before {content: url('../images/envelope.png');}
+	}
+	.phone-number {
+		&:before {content: url('../images/phone.png');}
+	}
+	.about-me {
+		&:before {content: url('../images/avatar.png');}
+	}
+	.icon:before {
+		margin-right: 15px;
+		vertical-align: middle;
+	}
+}
+
+@media (max-width: 990px) {
+  #meet-our-team .team-container {
+  	text-align: center;
+  	h3, p {
+		margin-left: 0;
+	}
+  }
+ }
+
+ #contact-us {
+ 	a {
+ 		font-family: $slablight;
+ 		font-size: 1.5em;
+ 		display:block;
+ 		border-bottom: 1px solid rgba(255,255,255, 0.2);
+ 		text-decoration: none;
+ 		padding: 9px 0;
+ 		transition: all 1s ease-in-out;
+
+ 		&:hover {
+ 			text-decoration: underline;
+ 		}
+ 	}
+ 	h3 {
+ 		font-size: 3em;
+ 		border-bottom: 1px solid rgba(255,255,255, 0.2);
+ 		padding-bottom: 9px;
+ 	}
+ }
+
+
+.youtube-container { 
+	display: block; 
+	margin: 20px 
+	auto; 
+	width: 100%; 
+	max-width: 600px; 
+}
+
+.youtube-player { 
+	display: block; 
+	width: 100%; /* assuming that the video has a 16:9 ratio */ 
+	padding-bottom: 56.25%; 
+	overflow: hidden; 
+	position: relative; 
+	width: 100%; 
+	height: 100%; 
+	cursor: hand; 
+	cursor: pointer; 
+	display: block; 
+}
+img.youtube-thumb { 
+	bottom: 0; 
+	display: block; 
+	left: 0; 
+	margin: auto; 
+	max-width: 100%; 
+	width: 100%; 
+	position: absolute; 
+	right: 0; 
+	top: 0; 
+	height: auto
+ }
+
+div.play-button { 
+	height: 153px; 
+	width: 153px; 
+	left: 44%;
+    top: 39%;
+    margin-left: -36px;
+    margin-top: -39px;
+	position: absolute; 
+	background: url("../images/play-button.png") no-repeat; 
+	z-index:999;
+}
+
+#youtube-iframe { 
+	width: 100%; 
+	height: 100%; 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+}
+.youtube-caption {
+	font-family: $slablight;
+	background-color: #282F34;
+	color: $white;
+	padding: 25px;
+	font-size: 1.2em;
+	img {
+		float: right;
+		margin: 0 10px;
+	}
+}
+
+@media (max-width: 550px) {
+  div.play-button {
+  	left: 36%;
+  	top:30%;
+  }
+  .youtube-caption {
+  	padding: 14px;
+  	img {
+  		margin: 0 3px;
+  	}
+  }
+ }

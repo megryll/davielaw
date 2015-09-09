@@ -1,0 +1,12 @@
+footer {
+	
+	color: $white;
+	text-align: center;
+	a {
+		color: $white;
+		&:hover {
+			color: $white;
+		}
+	}
+	p{font-family: $slablight;}
+}

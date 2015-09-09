@@ -12,6 +12,12 @@
       ],
       "main": true
     },
+    "smoothscroll.js": {
+      "files": [
+        "scripts/smoothscroll.js"
+      ],
+      "main": true
+    },
     "editor-style.css": {
       "files": [
         "styles/editor-style.scss"
@@ -25,6 +31,6 @@
     }
   },
   "config": {
-    "devUrl": "http://example.dev"
+    "devUrl": "http://localhost/davie/web/wp/"
   }
 }

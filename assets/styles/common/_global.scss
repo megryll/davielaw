@@ -1,1 +1,114 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@font-face {
+    font-family: 'klinic_slabmedium_italic';
+    src: url('../fonts/klinicslabmediumit-webfont.eot');
+    src: url('../fonts/klinicslabmediumit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/klinicslabmediumit-webfont.woff2') format('woff2'),
+         url('../fonts/klinicslabmediumit-webfont.woff') format('woff'),
+         url('../fonts/klinicslabmediumit-webfont.ttf') format('truetype'),
+         url('../fonts/klinicslabmediumit-webfont.svg#klinic_slabmedium_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'klinic_slabmedium';
+    src: url('../fonts/klinicslabmedium-webfont.eot');
+    src: url('../fonts/klinicslabmedium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/klinicslabmedium-webfont.woff2') format('woff2'),
+         url('../fonts/klinicslabmedium-webfont.woff') format('woff'),
+         url('../fonts/klinicslabmedium-webfont.ttf') format('truetype'),
+         url('../fonts/klinicslabmedium-webfont.svg#klinic_slabmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'klinic_slablight_italic';
+    src: url('../fonts/klinicslablightit-webfont.eot');
+    src: url('../fonts/klinicslablightit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/klinicslablightit-webfont.woff2') format('woff2'),
+         url('../fonts/klinicslablightit-webfont.woff') format('woff'),
+         url('../fonts/klinicslablightit-webfont.ttf') format('truetype'),
+         url('../fonts/klinicslablightit-webfont.svg#klinic_slablight_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'klinic_slablight';
+    src: url('../fonts/klinicslablight-webfont.eot');
+    src: url('../fonts/klinicslablight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/klinicslablight-webfont.woff2') format('woff2'),
+         url('../fonts/klinicslablight-webfont.woff') format('woff'),
+         url('../fonts/klinicslablight-webfont.ttf') format('truetype'),
+         url('../fonts/klinicslablight-webfont.svg#klinic_slablight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.float-right {
+	float: right;
+}
+.float-left {
+	float: left;
+}
+.float-none {
+	float: none;
+}
+.clear {
+	clear: both;
+}
+//text
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+.center {
+    text-align:center;
+}
+.caps {
+	text-transform: uppercase;
+}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    padding-left: 0;
+    padding-right: 0;
+}
+html, body {
+    overflow-x: hidden !important;
+}
+body {
+    background: url(../images/background.png) no-repeat center center fixed;
+    position:relative; 
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: $slablight;
+    margin-top:0;
+}
+h1 {font-size: 3.7em;}
+h2 {font-size: 3.3em;}
+h3 {font-size: 2.15em;}
+p {
+    font-family: $proxima;
+    font-weight: 300;
+    font-size: 17px;
+    font-size: 1.3em;
+    line-height: 30px;
+}
+a{
+    &:hover {}
+    &:active {}
+}
+
+
+
+
+
+
 
